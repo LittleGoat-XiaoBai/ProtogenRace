@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+<name>[XNP]New Protogen Race</name>
+<author>白羊</author>
+<packageId>XiaoBai.NewProtogenRace.TW</packageId>
+<supportedVersions>
+		<li>1.2</li>
+		<li>1.3</li>
+</supportedVersions>
+<description>
+	Protoge,來自另一個次元的既危險又可愛的人型毛茸茸機械化生物,獨特的電子顯示器,毛茸茸的尾巴
+	自1.4.0移除手臂
+</description>
+	<modDependencies>
+		<li>
+			<packageId>erdelf.HumanoidAlienRaces</packageId>
+			<displayName>Humanoid Alien Races 2.0</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+</ModMetaData>
