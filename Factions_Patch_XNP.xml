@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- These patches adds Protogen PawnKinds to all base game encounters, 
+	 with 20% of the weighting of the equivalent Human PawnKinds -->
+
+<Patch>
+	<!-- Pirates -->
+	<!-- Pirate raid 1; 100 commonality, ranged with melee mix-ins -->
+	<Operation Class="PatchOperationAdd">
+	<xpath>*/FactionDef[defName="Pirate"]/pawnGroupMakers/li[1]/options</xpath>
+	<value>
+        <Protogen_Drifter>2</Protogen_Drifter>
+		<Protogen_Thrasher>0.6</Protogen_Thrasher>
+        <Protogen_Scavenger>2</Protogen_Scavenger>
+        <Protogen_Pirate>2</Protogen_Pirate>
+        <Protogen_Grenadier_EMP>0.1</Protogen_Grenadier_EMP>
+        <Protogen_Grenadier_Destructive>0.4</Protogen_Grenadier_Destructive>
+        <Protogen_Mercenary_Gunner>2</Protogen_Mercenary_Gunner>
+        <Protogen_Mercenary_Heavy>1.2</Protogen_Mercenary_Heavy>
+        <Protogen_Mercenary_Slasher>0.6</Protogen_Mercenary_Slasher>
+        <Protogen_Mercenary_Sniper>1.4</Protogen_Mercenary_Sniper>
+        <Protogen_Mercenary_Elite>2</Protogen_Mercenary_Elite>
+        <Protogen_PirateBoss>1</Protogen_PirateBoss>
+	</value>
+	</Operation>
+
+	<!-- Pirate raid 2; 30 commonality, melee only -->
+	<Operation Class="PatchOperationAdd">
+	<xpath>*/FactionDef[defName="Pirate"]/pawnGroupMakers/li[2]/options</xpath>
+	<value>
+        <Protogen_Thrasher>2</Protogen_Thrasher>
+        <Protogen_Mercenary_Slasher>2</Protogen_Mercenary_Slasher>
+        <Protogen_PirateBoss>1</Protogen_PirateBoss>
+	</value>
+	</Operation>
+
+	<!-- Pirate raid 3; 20 commonality, ranged only -->
+	<Operation Class="PatchOperationAdd">
+	<xpath>*/FactionDef[defName="Pirate"]/pawnGroupMakers/li[3]/options</xpath>
+	<value>
+		<Protogen_Scavenger>2.0</Protogen_Scavenger>
+		<Protogen_Pirate>2.0</Protogen_Pirate>
+		<Protogen_Grenadier_EMP>0.05</Protogen_Grenadier_EMP>
+		<Protogen_Grenadier_Smoke>0.05</Protogen_Grenadier_Smoke>
+		<Protogen_Grenadier_Destructive>0.4</Protogen_Grenadier_Destructive>
+		<Protogen_Mercenary_Gunner>2.0</Protogen_Mercenary_Gunner>
+		<Protogen_Mercenary_Heavy>1.2</Protogen_Mercenary_Heavy>
+		<Protogen_Mercenary_Sniper>1.4</Protogen_Mercenary_Sniper>
+		<Protogen_Mercenary_Elite>2.0</Protogen_Mercenary_Elite>
+		<Protogen_PirateBoss>1.0</Protogen_PirateBoss>
+	</value>
+	</Operation>
+
+	<!-- Pirate raid 4; 15 commonality, explosives with ranged mix-ins -->
+	<Operation Class="PatchOperationAdd">
+	<xpath>*/FactionDef[defName="Pirate"]/pawnGroupMakers/li[4]/options</xpath>
+	<value>
+        <Protogen_Grenadier_EMP>0.2</Protogen_Grenadier_EMP>
+        <Protogen_Grenadier_Destructive>2</Protogen_Grenadier_Destructive>
+        <Protogen_Mercenary_Gunner>0.2</Protogen_Mercenary_Gunner>
+        <Protogen_Mercenary_Heavy>2</Protogen_Mercenary_Heavy>
+        <Protogen_Mercenary_Elite>0.2</Protogen_Mercenary_Elite>
+        <Protogen_PirateBoss>0.2</Protogen_PirateBoss>
+	</value>
+	</Operation>
+
+	<!-- Pirate raid 5; 10 commonality, snipers only -->
+	<Operation Class="PatchOperationAdd">
+	<xpath>*/FactionDef[defName="Pirate"]/pawnGroupMakers/li[5]/options</xpath>
+	<value>
+        <Protogen_Mercenary_Sniper>2</Protogen_Mercenary_Sniper>
+	</value>
+	</Operation>
+
+	<!-- Pirate raid 6; 2.5 commonality, drifters only -->
+	<Operation Class="PatchOperationAdd">
+	<xpath>*/FactionDef[defName="Pirate"]/pawnGroupMakers/li[6]/options</xpath>
+	<value>
+        <Protogen_Drifter>2</Protogen_Drifter>
+	</value>
+	</Operation>
+
+	<!-- Pirate Settlement; mainly ranged with melee mix-ins -->
+	<Operation Class="PatchOperationAdd">
+	<xpath>*/FactionDef[defName="Pirate"]/pawnGroupMakers/li[7]/options</xpath>
+	<value>
+        <Protogen_Thrasher>0.6</Protogen_Thrasher>
+        <Protogen_Pirate>2</Protogen_Pirate>
+        <Protogen_Grenadier_Destructive>0.4</Protogen_Grenadier_Destructive>
+		<Protogen_Mercenary_Slasher>0.6</Protogen_Mercenary_Slasher>
+		<Protogen_Mercenary_Sniper>2</Protogen_Mercenary_Sniper>
+		<Protogen_Mercenary_Gunner>2</Protogen_Mercenary_Gunner>
+		<Protogen_Mercenary_Elite>2</Protogen_Mercenary_Elite>
+        <Protogen_PirateBoss>2</Protogen_PirateBoss>
+	</value>
+	</Operation>
+	
+	<!-- Outlander -->
+	<!-- Outlander Raid; standard mix -->
+	<Operation Class="PatchOperationAdd">
+	<xpath>*/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[1]/options</xpath>
+	<value>
+        <Protogen_Villager>1</Protogen_Villager>
+        <Protogen_Town_Guard>2</Protogen_Town_Guard>
+        <Protogen_Grenadier_Destructive>0.3</Protogen_Grenadier_Destructive>
+		<Protogen_Mercenary_Slasher>1.4</Protogen_Mercenary_Slasher>
+		<Protogen_Mercenary_Gunner>2</Protogen_Mercenary_Gunner>
+		<Protogen_Mercenary_Elite>2</Protogen_Mercenary_Elite>
+        <Protogen_Town_Councilman>2</Protogen_Town_Councilman>
+	</value>
+	</Operation>
+	
+	<!-- Outlander Peaceful -->
+	<Operation Class="PatchOperationAdd">
+	<xpath>*/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[2]/options</xpath>
+	<value>
+        <Protogen_Villager>4</Protogen_Villager>
+        <Protogen_Town_Guard>2</Protogen_Town_Guard>
+        <Protogen_Town_Councilman>2</Protogen_Town_Councilman>
+	</value>
+	</Operation>
+
+	<!-- Outlander Traders -->
+	<Operation Class="PatchOperationAdd">
+	<xpath>*/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[3]/guards</xpath>
+	<value>
+        <Protogen_Villager>0.6</Protogen_Villager>
+        <Protogen_Town_Guard>2</Protogen_Town_Guard>
+        <Protogen_Grenadier_Destructive>0.3</Protogen_Grenadier_Destructive>
+        <Protogen_Mercenary_Slasher>1.4</Protogen_Mercenary_Slasher>
+        <Protogen_Mercenary_Gunner>2</Protogen_Mercenary_Gunner>
+		<Protogen_Mercenary_Elite>2</Protogen_Mercenary_Elite>
+	</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	<xpath>*/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[3]/traders</xpath>
+	<value>
+        <Protogen_Town_Trader>0.2</Protogen_Town_Trader>
+	</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	<xpath>*/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[4]/options</xpath>
+	<value>
+		<Protogen_Villager>2</Protogen_Villager>
+        <Protogen_Town_Guard>2</Protogen_Town_Guard>
+        <Protogen_Grenadier_Destructive>0.3</Protogen_Grenadier_Destructive>
+		<Protogen_Mercenary_Slasher>1.4</Protogen_Mercenary_Slasher>
+        <Protogen_Mercenary_Gunner>2</Protogen_Mercenary_Gunner>
+        <Protogen_Mercenary_Elite>2</Protogen_Mercenary_Elite>
+        <Protogen_Town_Councilman>2</Protogen_Town_Councilman>
+	</value>
+	</Operation>
+
+	<!-- Villager -->
+	<!-- Villager Raid 1; 100 commonality, ranged with melee mix-ins -->
+	<Operation Class="PatchOperationAdd">
+	<xpath>*/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[1]/options</xpath>
+	<value>
+        <Protogen_Tribal_Penitent>1</Protogen_Tribal_Penitent>
+        <Protogen_Tribal_Warrior>1</Protogen_Tribal_Warrior>
+        <Protogen_Tribal_Archer>2</Protogen_Tribal_Archer>
+        <Protogen_Tribal_Hunter>2</Protogen_Tribal_Hunter>
+        <Protogen_Tribal_HeavyArcher>2</Protogen_Tribal_HeavyArcher>
+        <Protogen_Tribal_Berserker>1</Protogen_Tribal_Berserker>
+        <Protogen_Tribal_ChiefRanged>0.6</Protogen_Tribal_ChiefRanged>
+        <Protogen_Tribal_ChiefMelee>0.3</Protogen_Tribal_ChiefMelee>
+	</value>
+	</Operation>
+
+	<!-- Villager Raid 2; 60 commonality, ranged only -->
+	<Operation Class="PatchOperationAdd">
+	<xpath>*/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[2]/options</xpath>
+	<value>
+        <Protogen_Tribal_Archer>2</Protogen_Tribal_Archer>
+        <Protogen_Tribal_Hunter>2</Protogen_Tribal_Hunter>
+        <Protogen_Tribal_HeavyArcher>2</Protogen_Tribal_HeavyArcher>
+        <Protogen_Tribal_ChiefRanged>1</Protogen_Tribal_ChiefRanged>
+	</value>
+	</Operation>
+
+	<!-- Villager Raid 3; 60 commonality, melee only -->
+	<Operation Class="PatchOperationAdd">
+	<xpath>*/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[3]/options</xpath>
+	<value>
+        <Protogen_Tribal_Penitent>2</Protogen_Tribal_Penitent>
+        <Protogen_Tribal_Warrior>2</Protogen_Tribal_Warrior>
+        <Protogen_Tribal_Berserker>2</Protogen_Tribal_Berserker>
+        <Protogen_Tribal_ChiefMelee>1</Protogen_Tribal_ChiefMelee>
+	</value>
+	</Operation>
+
+	<!-- Villager Peaceful -->
+	<Operation Class="PatchOperationAdd">
+	<xpath>*/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[5]/options</xpath>
+	<value>
+        <Protogen_Tribal_Warrior>4</Protogen_Tribal_Warrior>
+        <Protogen_Tribal_Archer>2</Protogen_Tribal_Archer>
+        <Protogen_Tribal_Hunter>2</Protogen_Tribal_Hunter>
+        <Protogen_Tribal_HeavyArcher>2</Protogen_Tribal_HeavyArcher>
+        <Protogen_Tribal_Berserker>1</Protogen_Tribal_Berserker>
+        <Protogen_Tribal_ChiefRanged>0.6</Protogen_Tribal_ChiefRanged>
+        <Protogen_Tribal_ChiefMelee>0.3</Protogen_Tribal_ChiefMelee>
+	</value>
+	</Operation>
+
+	<!-- Villager Traders -->
+	<Operation Class="PatchOperationAdd">
+	<xpath>*/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[6]/guards</xpath>
+	<value>
+        <Protogen_Tribal_Warrior>1.4</Protogen_Tribal_Warrior>
+        <Protogen_Tribal_Archer>2</Protogen_Tribal_Archer>
+        <Protogen_Tribal_Hunter>2</Protogen_Tribal_Hunter>
+        <Protogen_Tribal_HeavyArcher>2</Protogen_Tribal_HeavyArcher>
+        <Protogen_Tribal_Berserker>1.4</Protogen_Tribal_Berserker>
+	</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	<xpath>*/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[6]/traders</xpath>
+	<value>
+        <Protogen_Tribal_Trader>0.2</Protogen_Tribal_Trader>
+	</value>
+	</Operation>
+
+	<!-- Settlement -->
+
+	<Operation Class="PatchOperationAdd">
+	<xpath>*/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[7]/options</xpath>
+	<value>
+          <Protogen_Tribal_Warrior>1.4</Protogen_Tribal_Warrior>
+          <Protogen_Tribal_Archer>2</Protogen_Tribal_Archer>
+          <Protogen_Tribal_Hunter>2</Protogen_Tribal_Hunter>
+          <Protogen_Tribal_HeavyArcher>2</Protogen_Tribal_HeavyArcher>
+          <Protogen_Tribal_Berserker>1.4</Protogen_Tribal_Berserker>
+          <Protogen_Tribal_ChiefRanged>2</Protogen_Tribal_ChiefRanged>
+	</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- To prevent goddamn empire from being AnGeRy at poor you for no reason-->
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/FactionDef[defName = "Empire"]/permanentEnemyToEveryoneExcept</xpath>
+            <value>
+                <li>PlayerProtogenTribal</li>
+				<li>PlayerProtogenTribalNoTech</li>
+				<li>PlayerProtogenIndustrial</li>
+				<li>PlayerProtogenIndustrialNoTech</li>
+            </value>
+        </match>
+    </Operation>
+</Patch>
