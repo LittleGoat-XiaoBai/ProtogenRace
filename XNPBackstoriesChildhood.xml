@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+<AlienRace.BackstoryDef Abstract="True" Name="ProtogenBackstoriesChildhoodBase">
+	<spawnCategories>
+		<li>ProtogenBackstoriesChildhood</li>
+	</spawnCategories>
+	<slot>Childhood</slot>
+</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="ProtogenBackstoriesChildhoodBase">
+		<defName>ProtogenBackstoryLarvae</defName>
+		<title>Protogen幼體</title>
+		<titleShort>幼體</titleShort>
+		<baseDescription>{PAWN_nameDef}數據庫尚未建立,幼體非常脆弱</baseDescription>
+		<chronoAgeRange>
+			<min>0</min>
+			<max>249</max>
+		</chronoAgeRange>
+		<skillGains>
+			<li>
+				<defName>Medicine</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<!--8-->
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Artistic</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<!--8-->
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>1</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+</Defs>

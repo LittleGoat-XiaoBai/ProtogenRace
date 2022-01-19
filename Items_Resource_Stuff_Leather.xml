@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>Protogen_leather</defName>
+    <label>Protogen Leather</label>
+    <description>Protogen leather with gorgeus and rich silk fur. Very tender and protects well from heat. Very expensive due to it's properties and out of this world beauty.</description>
+    <graphicData>
+      <color>(25,25,112)</color>
+    </graphicData>
+	  <statBases>
+		  <MarketValue>14.0</MarketValue>
+		  <StuffPower_Armor_Sharp>0.5</StuffPower_Armor_Sharp>
+		  <StuffPower_Armor_Blunt>1</StuffPower_Armor_Blunt>
+		  <StuffPower_Insulation_Cold>-10</StuffPower_Insulation_Cold>
+		  <StuffPower_Insulation_Heat>30</StuffPower_Insulation_Heat>
+	  </statBases>
+    <stuffProps>
+      <color>(250,220,0)</color>
+      <commonality>0.01</commonality>
+	<statFactors>
+      <MaxHitPoints>1</MaxHitPoints>
+      <Beauty>10</Beauty>
+	</statFactors>
+    </stuffProps>
+  </ThingDef>
+  
+</Defs>

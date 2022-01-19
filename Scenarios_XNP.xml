@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ScenarioDef>
+	<defName>ProtogenScenario1</defName>
+	<label>Escape, Settle</label>
+	<description>
+		AI: The spacecraft has run out of energy, and the space transition has been interrupted...The current location of the Milky Way, "Desolate Planet", is moving to the central black hole of the star galaxy at too fast an hour. There are 4 cabin crew members, do you escape? Y/N.
+	</description>
+	<scenario>
+		<summary>
+		AI: The spacecraft has run out of energy, and the space transition has been interrupted...The current location of the Milky Way, "Desolate Planet", is moving to the central black hole of the star galaxy at too fast an hour. There are 4 cabin crew members, do you escape? Y/N.
+		</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>PlayerProtogenIndustrialNoTech</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<def>ConfigPage_ConfigureStartingPawns</def>
+				<pawnCount>4</pawnCount>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+				<method>DropPods</method>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>40</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MedicineIndustrial</thingDef>
+				<count>10</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ComponentIndustrial</thingDef>
+				<count>10</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Gun_Autopistol</thingDef>
+				<count>4</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>Steel</thingDef>
+				<count>500</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>WoodLog</thingDef>
+				<count>200</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>ShipChunk</thingDef>
+				<count>6</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Steel</thingDef>
+				<count>200</count>
+			</li>
+			<li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>AI: The emergency landing is successful. Due to the cargo hold failure, the delivered materials will be scattered everywhere. The speed of the spacecraft exceeds the speed of 50000km/h, and it rushes to the center of the galaxy...Prepare for an impact...(disconnected) (AI RIP)</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+		</parts>
+	</scenario>
+</ScenarioDef>
+
+</Defs>

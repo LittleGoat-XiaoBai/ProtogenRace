@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<FactionDef ParentName="FactionBase" Abstract="True" Name="ProtogenFactionBase">
+    <settlementTexturePath>World/WorldObjects/ProtogenBase</settlementTexturePath>
+    <colorSpectrum>
+      <li>(184, 244, 255)</li>
+    </colorSpectrum>
+  </FactionDef>
+  
+	<!--TRIBAL FACTION-->
+  <FactionDef ParentName="ProtogenFactionBase">
+    <defName>PlayerProtogenTribal</defName>
+    <label>Protogen Tribe</label>
+    <description>Protogen tribe</description>
+    <isPlayer>true</isPlayer>
+    <pawnSingular>Protogen</pawnSingular>
+    <pawnsPlural>Protogen</pawnsPlural>
+    <basicMemberKind>ProtogenTribalPawn</basicMemberKind>
+    <techLevel>Neolithic</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>World/WorldObjects/Protogen_Faction</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/Protogen_Base</settlementTexturePath>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>TribalStart</li>
+      <li>TribalStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>DevilstrandCloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <recipePrerequisiteTags>
+      <li>Tribal</li>
+    </recipePrerequisiteTags>
+    </FactionDef>
+	
+	<!--TRIBAL FACTION (NO TECH AT START)-->
+	<FactionDef ParentName="ProtogenFactionBase">
+    <defName>PlayerProtogenTribalNoTech</defName>
+    <label>Protogen Tribe (No tech)</label>
+    <description>Protogen tribe</description>
+    <isPlayer>true</isPlayer>
+    <pawnSingular>Protogen</pawnSingular>
+    <pawnsPlural>Protogen</pawnsPlural>
+    <basicMemberKind>ProtogenTribalPawn</basicMemberKind>
+    <techLevel>Neolithic</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>World/WorldObjects/Protogen_Faction</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/Protogen_Base</settlementTexturePath>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>TribalStart</li>
+      <li>TribalStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>DevilstrandCloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <recipePrerequisiteTags>
+      <li>Tribal</li>
+    </recipePrerequisiteTags>
+    </FactionDef>
+	
+	<!--INDUSTRIAL FACTION-->
+	<FactionDef ParentName="ProtogenFactionBase">
+    <defName>PlayerProtogenIndustrial</defName>
+    <label>Protogen Colony</label>
+    <description>Protogen Colony</description>
+    <isPlayer>true</isPlayer>
+    <pawnSingular>Protogen</pawnSingular>
+    <pawnsPlural>Protogen</pawnsPlural>
+    <basicMemberKind>ProtogenIndustrialPawn</basicMemberKind>
+    <techLevel>Industrial</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>World/WorldObjects/Protogen_Faction</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/Protogen_Base</settlementTexturePath>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>ClassicStart</li>
+      <li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+      <thingDefs>
+			<li>Synthread</li>
+			<li>Hyperweave</li>
+			<li>Plasteel</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <recipePrerequisiteTags>
+      <li>Industrial</li>
+    </recipePrerequisiteTags>
+    </FactionDef>
+	
+	<!--INDUSTRIAL FACTION (NO TECH AT START)-->
+	<FactionDef ParentName="ProtogenFactionBase">
+    <defName>PlayerProtogenIndustrialNoTech</defName>
+    <label>Protogen Colony (No tech)</label>
+    <description>Protogen colony</description>
+    <isPlayer>true</isPlayer>
+    <pawnSingular>Protogen</pawnSingular>
+    <pawnsPlural>Protogen</pawnsPlural>
+    <basicMemberKind>ProtogenIndustrialPawn</basicMemberKind>
+    <techLevel>Industrial</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>World/WorldObjects/Protogen_Faction</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/Protogen_Base</settlementTexturePath>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+
+    <apparelStuffFilter>
+      <thingDefs>
+			<li>Synthread</li>
+			<li>Hyperweave</li>
+			<li>Plasteel</li>				
+      </thingDefs>
+    </apparelStuffFilter>
+    <recipePrerequisiteTags>
+      <li>Industrial</li>
+    </recipePrerequisiteTags>
+    </FactionDef>
+</Defs>

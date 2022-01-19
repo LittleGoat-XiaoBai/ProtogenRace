@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HairDef>
+    <defName>No_Hair_Protogen</defName>
+    <label>No Hair</label>
+    <texPath>Protogen/Hair/No_hair</texPath>
+    <hairTags>
+			<li>Protogen</li>
+		</hairTags>
+  </HairDef>
+</Defs>

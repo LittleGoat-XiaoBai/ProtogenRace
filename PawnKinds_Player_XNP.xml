@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Abstract="True" Name="BaseProtogenPawnKind">
+    <race>Protogen</race>
+	<backstoryFiltersOverride>
+        <li>
+            <categories>
+                <li>ProtogenBackstoriesChildhood</li>
+				<li>ProtogenBackstoriesAdulthood</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+    <combatPower>30</combatPower>
+	<baseRecruitDifficulty>0.75</baseRecruitDifficulty>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseProtogenPawnKind">
+    <defName>ProtogenTribalPawn</defName>
+    <label>member</label>
+    <race>Protogen</race>
+    <defaultFactionType>PlayerProtogenTribal</defaultFactionType>
+    <apparelTags>
+      <li>Neolithic</li>
+    </apparelTags>
+    <apparelMoney>200~1200</apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>2~5</initialResistanceRange>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BaseProtogenPawnKind">
+    <defName>ProtogenIndustrialPawn</defName>
+    <label>member</label>
+    <race>Protogen</race>
+    <defaultFactionType>PlayerProtogenIndustrial</defaultFactionType>
+    <apparelTags>
+      <li>Industrial</li>
+    </apparelTags>
+    <apparelMoney>200~2000</apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>2~5</initialResistanceRange>
+  </PawnKindDef>
+
+</Defs>

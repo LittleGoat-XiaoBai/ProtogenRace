@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<RulePackDef>
+        <defName>ProtogenNameM</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>name->[FirstM] '[SecondM]' [Ident]</li>
+            </rulesStrings>
+            <rulesRaw>
+                <li Class="Rule_File">
+                    <keyword>FirstM</keyword>
+                    <path>ProtogenNames/ProtogenMaleFirstName</path>
+                </li>
+                <li Class="Rule_File">
+                    <keyword>SecondM</keyword>
+                    <path>ProtogenNames/ProtogenMaleMidName</path>
+                </li>
+                <li Class="Rule_File">
+                    <keyword>Ident</keyword>
+                    <path>ProtogenNames/ProtogenSurName</path>
+                </li>
+            </rulesRaw>
+        </rulePack>
+    </RulePackDef>
+    
+        <RulePackDef>
+        <defName>ProtogenNameF</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>name->[FirstF] '[SecondF]' [Ident]</li>
+            </rulesStrings>
+            <rulesRaw>
+                <li Class="Rule_File">
+                    <keyword>FirstF</keyword>
+                    <path>ProtogenNames/ProtogenFemaleFirstName</path>
+                </li>
+                <li Class="Rule_File">
+                    <keyword>SecondF</keyword>
+                    <path>ProtogenNames/ProtogenFemaleMidName</path>
+                </li>
+                <li Class="Rule_File">
+                    <keyword>Ident</keyword>
+                    <path>ProtogenNames/ProtogenSurName</path>
+                </li>
+            </rulesRaw>
+        </rulePack>
+    </RulePackDef>
+</Defs>
